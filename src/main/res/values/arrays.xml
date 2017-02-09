@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_activities">
+        <item>FAB &amp; Toolbar Animation</item>
+        <item>Navigation Drawer</item>
+        <item>Toolbar Animation with Image</item>
+        <item>Material Style Tabs</item>
+        <item>Reveal Animation</item>
+        <item>Interested</item>
+
+
+    </string-array>
+
+    <string-array name="home_activities_subtitle">
+        <item>G+ like on scroll hide animation</item>
+        <item>Material Design drawer with scrim</item>
+        <item>Using the new Support Design Library</item>
+        <item>Tab strip with Design Support Lib</item>
+        <item>Circular Reveal for pre Lollipop</item>
+        <item>parallax scrolling with tabs</item>
+
+    </string-array>
+
+</resources>

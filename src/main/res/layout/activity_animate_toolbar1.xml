@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:theme="@style/Base.Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:background="@drawable/wallpaper">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView8"
+android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/tech2"
+                    android:id="@+id/imageView9"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_alignLeft="@+id/imageView9"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="TECHKRITI"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/textView3"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3.6"
+            android:background="@android:color/transparent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/scrollView" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/img_bg"
+                            android:id="@+id/imageView"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="20dp"
+                        android:layout_width="fill_parent"
+                        android:background="@android:color/transparent"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/imageView2"
+                            android:background="@drawable/img_bg"
+
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="20dp"
+                        android:layout_width="fill_parent"
+                        android:background="@android:color/transparent"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/imageView3"
+                            android:background="@drawable/img_bg"
+
+
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="20dp"
+                        android:layout_width="fill_parent"
+                        android:background="@android:color/transparent"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/imageView4"
+                            android:background="@drawable/img_bg"
+
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout >

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suleiman.techkriti">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tech"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name="com.suleiman.techkriti.activities.LaunchScreenActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.suleiman.techkriti.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.NavDrawerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.TabAnimationActivity"
+            android:label="Contact Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.talks"
+            android:label="Tech talks"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.shows"
+            android:label="Shows"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.exhibition"
+            android:label="Exhibition"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.AnimateToolbar"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.AnimateToolbar1"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.RevealAnimation"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_reveal_animation" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.TabsHeaderActivity"
+            android:label="@string/title_activity_tabs_header"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.TabsHeaderActivity1"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_tabs_header"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.TabsHeaderActivity2"
+            android:label="@string/title_activity_tabs_header"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.competitions"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_competitions" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.AndroidGridLayoutActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Gallery" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.FullImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_competitions" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.FabHideActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_fab_hide" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.Login"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.profile"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.contacts"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.RegEmbed"
+            android:configChanges="orientation|screenSize"
+            android:label="Register"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.Gallery"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/MyTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.suleiman.techkriti.MapsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="com.suleiman.techkriti.MapsActivity1"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.Signup"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.random"
+            android:label="TECHKRITI"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.random1"
+            android:label="@string/title_activity_random1"
+            android:theme="@style/MyTheme" />
+
+        <receiver android:name="com.suleiman.techkriti.activities.MyReceiver" />
+        <receiver android:name="com.suleiman.techkriti.activities.Scheduler" />
+
+        <activity
+            android:name="com.suleiman.techkriti.activities.Startpage"
+            android:label="TECHKRITI"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.startPage2"
+            android:label="TECHKRITI"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.suleiman.techkriti.mymap"
+            android:label="@string/title_activity_mymap" />
+        <activity
+            android:name="com.suleiman.techkriti.activities.Notification_Act"
+            android:label="Notifications"
+            android:theme="@style/MyTheme"></activity>
+    </application>
+
+</manifest>

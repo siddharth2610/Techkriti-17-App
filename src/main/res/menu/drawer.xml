@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_18dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/navigation_item_2"
+            android:checked="true"
+            android:icon="@drawable/ic_pool_black_24dp"
+            android:title="Competitions" />
+        <item
+            android:id="@+id/navigation_item_3"
+            android:checked="true"
+            android:icon="@drawable/ic_settings_voice_black_24dp"
+            android:title="Talks" />
+        <item
+            android:id="@+id/navigation_item_4"
+            android:checked="true"
+            android:icon="@drawable/ic_important_devices_black_24dp"
+            android:title="Shows" />
+        <item
+            android:id="@+id/navigation_item_5"
+            android:checked="true"
+            android:icon="@drawable/ic_explicit_black_24dp"
+            android:title="Exhibition" />
+        <item
+            android:id="@+id/navigation_item_6"
+            android:checked="true"
+            android:icon="@drawable/ic_photo_library_black_18dp"
+            android:title="Gallery"
+
+            />
+
+        <item
+            android:id="@+id/navigation_item_7"
+            android:checked="true"
+            android:icon="@drawable/ic_call_black_18dp"
+            android:title="Contact us" />
+
+        <item
+            android:id="@+id/navigation_item_8"
+            android:checked="true"
+            android:icon="@drawable/ic_room_black_18dp"
+            android:title="Map" />
+
+
+
+
+
+    </group>
+
+
+</menu>

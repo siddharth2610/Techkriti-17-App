@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/htab_maincontent"
+
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/header"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/anim_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scrollableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include layout="@layout/activity_fab_hide_activity" />
+
+
+    <FrameLayout
+        android:id="@+id/myfab_main"
+        android:layout_width="100dp"
+
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_height="100dp"
+        >
+
+        <View
+            android:id="@+id/myfab_shadow"
+            android:layout_width="80dp"
+            app:layout_anchor="@+id/appbar"
+            app:layout_anchorGravity="bottom|right|end"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_shadow" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/myfab_main_btn"
+            android:layout_width="@dimen/fab_size"
+            android:layout_height="@dimen/fab_size"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            app:layout_anchor="@+id/appbar"
+
+            app:layout_behavior="com.suleiman.techkriti.activities.ScrollingFABBehavior"
+            app:layout_anchorGravity="bottom|right|end"
+            android:src="@drawable/ic_action_add"
+            android:stateListAnimator="@animator/fab_elevation_selector" />
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

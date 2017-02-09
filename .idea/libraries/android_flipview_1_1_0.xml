@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="android-flipview-1.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/se.emilsjolander/android-flipview/1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/se.emilsjolander/android-flipview/1.1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/se.emilsjolander/android-flipview/1.1.0/d02ea377a6a573e2442448b5fcd86adde427402d/android-flipview-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

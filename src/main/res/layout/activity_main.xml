@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flipview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/htab_maincontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <se.emilsjolander.flipview.FlipView
+        android:id="@+id/flip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        flipview:orientation="vertical"
+        flipview:overFlipMode="rubber_band"
+        tools:context=".MainActivity" >
+    </se.emilsjolander.flipview.FlipView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="Empty!"
+        android:textSize="32sp"
+        android:visibility="visible" />
+
+</android.support.design.widget.CoordinatorLayout>
